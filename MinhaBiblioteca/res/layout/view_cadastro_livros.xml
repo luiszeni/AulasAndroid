@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint = "Título" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint = "Autor"  />
+
+    <EditText
+        android:id="@+id/etPaginas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" 
+        android:hint = "Número de paginas" />
+
+    <Button
+        android:id="@+id/btGeraCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar este Livro" />
+
+</LinearLayout>
