@@ -8,7 +8,7 @@ public class DbHelper extends SQLiteOpenHelper{
 
 	//Configure o nome da Base e a versão aqui:
 	private static final String NOME_BASE = "BancoExemplo";
-	private static final int VERSAO_BASE = 6;
+	private static final int VERSAO_BASE = 11;
 	
 	private static DbHelper instancia;
 	
@@ -30,6 +30,8 @@ public class DbHelper extends SQLiteOpenHelper{
 		db.execSQL(DAOCidade.CREATE_TABLE);
 		db.execSQL(DAOConsole.CREATE_TABLE);
 		db.execSQL(DAOJogo.CREATE_TABLE);
+		db.execSQL(DAOFornecedor.CREATE_TABLE);
+		db.execSQL(DAOProduto.CREATE_TABLE);
 	}
 
 	@Override
@@ -39,7 +41,8 @@ public class DbHelper extends SQLiteOpenHelper{
 		db.execSQL(DAOCidade.DROP_TABLE);
 		db.execSQL(DAOConsole.DROP_TABLE);
 		db.execSQL(DAOJogo.DROP_TABLE);
-		
+		db.execSQL(DAOFornecedor.DROP_TABLE);
+		db.execSQL(DAOProduto.DROP_TABLE);
 		onCreate(db);
 	}	
 }
